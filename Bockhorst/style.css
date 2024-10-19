@@ -20,7 +20,7 @@ body {
 
 .main-container h1 {
     flex: 1;
-    text-align: center;
+    text-align: left;
     color: white;
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;

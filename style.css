@@ -7,30 +7,35 @@ body {
 
 .main-container {
     display: flex;
-    height: 100vh;
-    align-items: end;
+    align-items: start;
     background: #111;
 }
 
 .main-container .image-container {
     /* flex: 1; */
-    background: red;
     height: 100%;
-
     position: fixed;
     width: 100%;
 }
 
 .main-container h1 {
     flex: 1;
-    text-align: left;
-    margin-left: 2%;
+    text-align: right;
+    margin-right: 1%;
     font-size: 40px;
     font-weight: 300;
     letter-spacing: 10px;
     z-index: 100;
     text-shadow: 2px 16px 16px rgba(0,0,0,0.3);
     pointer-events: none;
+}
+
+.highlighted-text {
+    background-color: rgba(128, 128, 128, 0.5); /* Leicht grau mit 50% Transparenz */
+    padding: 0.5%; /* Padding für den Text */
+    padding-left: 0.8%;
+    border-radius: 5px; /* Abgerundete Ecken */
+    display: inline-block; /* Hintergrund nur um den Text */
 }
 
 
@@ -43,8 +48,8 @@ body {
 
 .menu-container {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 1%;
+    left: 1%;
     z-index: 1000; /* Damit es über anderen Inhalten liegt */
 }
 

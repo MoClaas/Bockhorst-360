@@ -5,7 +5,8 @@ body {
 .main-container {
     display: flex;
     height: 100vh;
-    align-items: center;
+    align-items: end;
+    margin-bottom: 5%;
     background: #111;
 }
 
@@ -21,6 +22,7 @@ body {
 .main-container h1 {
     flex: 1;
     text-align: left;
+    margin-left: 5%;
     color: white;
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;

@@ -40,3 +40,7 @@ const menuContainer = document.querySelector('.menu-container');
 menuIcon.addEventListener('click', () => {
     menuContainer.classList.toggle('open'); // "open"-Klasse wird hinzugefügt oder entfernt
 });
+
+panoramaImage.addEventListener('click', () => {
+    menuContainer.classList.remove('open'); // "open"-Klasse wird entfernt
+});

@@ -33,3 +33,10 @@ viewer.add(panoramaImage);
 //         viewer.zoomIn(); // Scrollen nach unten - herauszoomen
 //     }
 // });
+
+const menuIcon = document.querySelector('.menu-icon');
+const menuContainer = document.querySelector('.menu-container');
+
+menuIcon.addEventListener('click', () => {
+    menuContainer.classList.toggle('open'); // "open"-Klasse wird hinzugefügt oder entfernt
+});

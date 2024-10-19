@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+}
+
+.main-container {
+    display: flex;
+    height: 100vh;
+    align-items: end;
+    background: #111;
+}
+
+.main-container .image-container {
+    /* flex: 1; */
+    background: red;
+    height: 100%;
+
+    position: fixed;
+    width: 100%;
+}
+
+.main-container h1 {
+    flex: 1;
+    text-align: left;
+    margin-left: 2%;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 10px;
+    z-index: 100;
+    text-shadow: 2px 16px 16px rgba(0,0,0,0.3);
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+.menu-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000; /* Damit es über anderen Inhalten liegt */
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.dropdown-menu {
+    display: none; /* Menü ist standardmäßig ausgeblendet */
+    flex-direction: column;
+    position: absolute;
+    top: 45px; /* Abstand vom Menü-Icon */
+    left: 0;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+/* Links im Menü */
+.dropdown-menu a {
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #575757;
+}
+
+/* Sichtbares Menü */
+.menu-container.open .dropdown-menu {
+    display: flex;
+}
+
+
+
+
+
+/* Stile für das span-Element */
+.menu-item {
+    color: white;           /* Textfarbe */
+    font-weight: bold;     /* Fettdruck */
+    padding: 8px 16px;     /* Padding hinzufügen */
+    display: block;        /* Mach es zu einem Block-Element, falls gewünscht */
+    background-color: #444; /* Hintergrundfarbe */
+    border-radius: 5px;    /* Abgerundete Ecken */
+}
+
+
+.separator {
+    height: 1px;                /* Höhe der Linie */
+    background-color: #575757;  /* Farbe der Linie */
+    margin: 8px 0;              /* Abstand oberhalb und unterhalb der Linie */
+    width: 100%;                /* Breite der Linie */
+}

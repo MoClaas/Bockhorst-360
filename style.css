@@ -111,3 +111,29 @@ body {
     margin: 8px 0;              /* Abstand oberhalb und unterhalb der Linie */
     width: 100%;                /* Breite der Linie */
 }
+
+
+
+
+
+
+
+/* Positioniere das Bild in der Ecke */
+.corner-image-link {
+    position: fixed;  /* Fixiere das Bild, damit es immer sichtbar bleibt */
+    bottom: 10px;     /* Abstand vom unteren Rand */
+    right: 10px;      /* Abstand vom rechten Rand */
+    z-index: 1000;    /* Höherer Z-Index, damit das Bild nicht vom Inhalt überlagert wird */
+  }
+  
+  .corner-image-link img {
+    width: 40px;     /* Passe die Bildgröße an */
+    height: auto;     /* Höhe automatisch basierend auf der Breite */
+    opacity: 0.5;     /* Optional: Bild leicht transparent */
+    transition: opacity 0.3s;  /* Weicher Übergang für Hover-Effekt */
+  }
+  
+  .corner-image-link img:hover {
+    opacity: 1;       /* Volle Deckkraft, wenn darübergefahren wird */
+  }
+  
